@@ -18,7 +18,12 @@ Menu:
 3. Exit
 Choose an option (1-3): 
 
-For option 1, print out each student and their courses in a nice way.
+For option 1, print out each student's name, with each of their courses indented
+out on their own lines, like this:
+
+    Bob
+        Marketing
+        Finance
 
 For option 2, ask for a student name and a course to add to their course list.
 If their name already exists in the dictionary, just add the course to the end
