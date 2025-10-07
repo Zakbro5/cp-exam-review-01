@@ -56,8 +56,16 @@ while True:
         print(f"Course added for {name}.")
 
     elif choice == "3":
+        name = input("Enter a studnet's name: ")
+        
         # WRITE YOUR LOGIC HERE
         pass # pass does literally nothing. It is just a way to make python not yell at you when the code is expecting something.
+        
+# - Ask for a student name
+# - Using the returned value of the count_courses function, print out a message
+#   saying:
+#     "Student <student name> is taking <number of courses> courses.
+
 
     elif choice == "4":
         break

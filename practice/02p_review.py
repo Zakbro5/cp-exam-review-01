@@ -38,4 +38,24 @@ students_courses = {
     "Ben": ["Economics"],
     "Chloe": ["Finance", "Statistics", "Marketing"]
 }
+option = 0
+while option != "3":
+    option = input("Menu:\n1. View all students and courses\n2. Add a course to a student\n3. Exit\nChoose an option (1-3): ")
+    if option == "1":
+        # print(students_courses)
+        for key_student, value_courses_list in students_courses.items():
+            print(key_student)
+            for course_string in value_courses_list:
+                print(f"\t{course_string}")
+    elif option == "2":
+        student_name = input("Enter a student's name: ")
+        new_course = input("Enter a course to add to their course list: ")
+        if student_name in students_courses:
+            students_courses[student_name].append(new_course)
+        else:
+            students_courses[student_name] = new_course
+    else:
+        print("Invalid option")
+
+print("Thanks for adding to the list of courses!")
 

@@ -14,7 +14,7 @@ lists of their courses as the values) and a student name string as arguments.
 The function should return the number of courses that student is taking. If 
 the student name can't be found in the diciontary, it should just return 0.
 
-After writing your dictionary, try calling it a couple of times using the 
+After writing your function, try calling it a couple of times using the 
 provided dictionary as one of the arguments.
 '''
 
@@ -24,3 +24,13 @@ example_data = {
     "Chloe": ["Finance", "Statistics", "Marketing"]
 }
 
+def accept_dict(student_name):
+    if student_name in example_data:
+        num_courses = len(example_data[student_name])
+        return num_courses
+    else:
+        return 0
+    
+print(accept_dict("Alice"))
+print(accept_dict("Ben"))
+print(accept_dict("James"))
